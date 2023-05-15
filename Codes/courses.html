@@ -1,0 +1,79 @@
+<!-- 
+  Student Name: Qiaoqing Wu
+  Due Date: 2023-03-12
+  Section: CST8285 Lab section 313
+  Description: unformatted html documentation about Qiaoqing Wu's 
+  personal portfolio
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Qiaoqing Wu">
+  <title>QIAOQING</title>
+  <!-- free icon image -->
+  <link rel = "icon" href="../images/icons8-starburst-shape-64.png" type = "image/x-icon">
+  
+  <link rel="stylesheet" type="text/css" href="portfolio.css">
+  <script src="portfolio.js"></script>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+  <header id="head-nav">
+    <div id="head-name">QIAOQING WU</div>
+    <div id="courses-navbar">
+      <a href="index.html" class="nav">Home</a>
+      <a href="resume.html" class="nav">Resume</a>
+      <a href="courses.html" class="nav active">Courses</a>
+    </div> 
+  </header>
+  
+  <button id="topBtn" title="Go to top"><i class="fa-solid fa-arrow-up-long"></i></button>
+
+  <main>
+    <div id="course-first-block">      
+      <div>
+        <h1>Courses List</h1>
+        <button id="drop-down-btn">Select the Level <i class="fa-solid fa-caret-down"></i></button>
+        <div id="drop-down-list">
+          <button onclick="filterSelection(1)">Level 1</button>
+          <button onclick="filterSelection(2)">Level 2</button>
+          <button onclick="filterSelection(3)">Level 3</button>
+          <button onclick="filterSelection(4)">Level 4</button>
+          <button onclick="displayAllAsc()">Level 1 - Level 4</button>
+          <button onclick="displayAllDesc()">Level 4 - Level 1</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="search-container">
+      <input type="search" placeholder="Search.." name="search" id="searchbox" onkeyup="doSearch()">
+      <button type="submit" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    
+    <div id="l1">
+      <div id="course-container">
+      </div>
+    </div>
+
+    <div id="l2"></div>
+    <div id="l3"></div>
+    <div id="l4"></div>
+
+  </main>
+
+  <footer>
+    <div id="bottom-name">
+      © 2023 QIAOQING WU
+    </div>
+  </footer>
+</body>
+</html>
